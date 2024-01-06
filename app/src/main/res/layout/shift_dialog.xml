@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/enter_startDate"
+        android:layout_width="204dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:hint="Start Date" />
+
+    <EditText
+        android:id="@+id/enter_startTime"
+        android:layout_width="197dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/enter_startDate"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="9dp"
+        android:hint="Start Time" />
+
+
+    <EditText
+        android:id="@+id/enter_endDate"
+        android:layout_width="198dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="115dp"
+        android:hint="End Date" />
+
+
+    <EditText
+        android:id="@+id/enter_endTime"
+        android:layout_width="197dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/enter_startDate"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="128dp"
+        android:hint="End Time" />
+
+    <Button
+        android:id="@+id/btn_startDate"
+        android:layout_width="184dp"
+        android:layout_height="58dp"
+        android:layout_alignBottom="@+id/enter_startDate"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="-18dp"
+        android:layout_toEndOf="@+id/enter_startDate"
+        android:text="Select Start Date" />
+
+
+    <Button
+        android:id="@+id/btn_startTime"
+        android:layout_width="189dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/btn_startDate"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/enter_startTime"
+        android:text="Select Start Time" />
+
+    <Button
+        android:id="@+id/btn_endDate"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_startTime"
+        android:layout_alignBottom="@+id/enter_startDate"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="-136dp"
+        android:layout_toEndOf="@+id/enter_startDate"
+        android:text="Select End Date" />
+
+    <Button
+        android:id="@+id/btn_endTime"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_startDate"
+        android:layout_alignStart="@+id/btn_startDate"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="135dp"
+        android:text="Select End Time" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="160dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="225dp"
+        android:text="Confirm" />
+
+
+</RelativeLayout>

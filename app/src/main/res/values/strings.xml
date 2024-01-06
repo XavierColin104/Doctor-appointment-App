@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SEG2105Project</string>
+    <string name="email_placeholder">e.g someone@example.com</string>
+    <string name="password_placeholder">password</string>
+</resources>

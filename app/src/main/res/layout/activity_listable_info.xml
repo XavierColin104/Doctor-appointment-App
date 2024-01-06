@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ListableInfoActivity">
+
+    <TextView
+        android:id="@+id/txt_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txt_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_first"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_first"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txt_third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_second"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_second"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txt_fourth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_third"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_third"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txt_fifth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_fourth"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_fourth"
+        tools:layout_editor_absoluteX="0dp"/>
+
+    <TextView
+
+        android:visibility="gone"
+        android:id="@+id/txt_sixth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_fifth"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_fifth"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txt_seventh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_sixth"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_sixth"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/img_refuse"
+        android:layout_width="25dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/txt_seventh"
+        android:onClick="refuse"
+        android:src="@drawable/baseline_delete_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_seventh" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/img_approve"
+        android:layout_width="25dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/txt_seventh"
+        android:onClick="approve"
+        android:src="@drawable/baseline_check_circle_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_seventh" />
+
+
+
+    <Button
+        android:id="@+id/btn_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="484dp"
+        android:text="Submit"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="rate"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="472dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/btn_rating"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
